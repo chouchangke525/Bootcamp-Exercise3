@@ -51,6 +51,9 @@
 {
     // Whent the view appears on screen, Log out the date the button was tapped
     NSLog(@">>>> view did appear: button tapped on %@", self.tappedOnDate);
+    
+    // Call our method
+    [self determineIfNaughtyOrNice];
 }
 
 /*******************************************************************************
@@ -62,6 +65,26 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+/*******************************************************************************
+ * @method      determineIfNaughtyOrNice
+ * @abstract    <# abstract #>
+ * @description <# description #>
+ *******************************************************************************/
+- (void)determineIfNaughtyOrNice
+{
+    // Determine number of seconds since unix epoch time (Jan 1, 1970)
+    int seconds = [self.tappedOnDate timeIntervalSince1970];
+    NSLog(@">>>> seconds:%d",seconds);
+    
+    // Take the unscientific (and not Santa approved) appraoch that
+    // if the number of seconds is even you are Nice, else you are naughty
+    if (seconds%2 == 0) {
+        NSLog(@">>>> Nice");
+    } else {
+        NSLog(@">>>> Naughty");
+    }
 }
 
 @end
