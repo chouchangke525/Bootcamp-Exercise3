@@ -99,12 +99,31 @@
                                             <constraint firstAttribute="width" constant="240" id="I3l-7d-LrF"/>
                                         </constraints>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEZ-0P-pUi">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="57" id="DOq-lq-DA6"/>
+                                            <constraint firstAttribute="height" constant="60" id="pBK-AU-OXJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="twitter.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tapTwitterButton:" destination="pAO-7o-4NK" eventType="touchUpInside" id="AnL-w9-3nR"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="CPC-GY-YDE" firstAttribute="top" secondItem="WJg-VW-YE5" secondAttribute="top" type="default" id="7qz-cJ-AZW"/>
                                     <constraint firstItem="CPC-GY-YDE" firstAttribute="bottom" secondItem="WJg-VW-YE5" secondAttribute="bottom" type="default" id="E9R-8F-yrv"/>
+                                    <constraint firstAttribute="bottom" secondItem="rEZ-0P-pUi" secondAttribute="bottom" constant="8" id="Iez-29-lEx"/>
                                     <constraint firstItem="CPC-GY-YDE" firstAttribute="centerX" secondItem="WJg-VW-YE5" secondAttribute="centerX" type="default" id="d0m-gg-0Px"/>
+                                    <constraint firstItem="rEZ-0P-pUi" firstAttribute="leading" secondItem="WJg-VW-YE5" secondAttribute="leading" constant="11" id="kdr-Tx-48Y"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -138,22 +157,8 @@
     <resources>
         <image name="candycane.jpeg" width="216" height="384"/>
         <image name="fingerprint.png" width="291" height="351"/>
+        <image name="twitter.png" width="102" height="102"/>
     </resources>
-    <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="ReportViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ReportViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="resultsImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="resultsLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

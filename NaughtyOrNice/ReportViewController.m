@@ -7,6 +7,7 @@
 //
 
 #import "ReportViewController.h"
+#import <Social/Social.h>
 
 @interface ReportViewController ()
 
@@ -93,4 +94,17 @@
     self.resultsImageView.image = resultsImage;
 }
 
+/*******************************************************************************
+ * @method      tapTwitterButton
+ * @abstract    Send a tween
+ * @description Need to add twitter framework
+ *******************************************************************************/
+- (IBAction)tapTwitterButton:(id)sender {
+    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter])
+    {
+        SLComposeViewController *tweetSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+        [tweetSheet setInitialText:@"I've been..."];
+        [self presentViewController:tweetSheet animated:YES completion:nil];
+    }
+}
 @end

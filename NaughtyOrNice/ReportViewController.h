@@ -11,9 +11,11 @@
 @interface ReportViewController : UIViewController
 
 @property (strong, nonatomic) NSDate *tappedOnDate;
-
 @property (weak, nonatomic) IBOutlet UILabel *resultsLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *resultsImageView;
+
+- (IBAction)tapTwitterButton:(id)sender;
+
 
 @end
 
