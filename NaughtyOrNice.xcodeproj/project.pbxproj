@@ -18,6 +18,7 @@
 		378E7BDE1654B0A600465502 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 378E7BDD1654B0A600465502 /* Default-568h@2x.png */; };
 		378E7BE11654B0A600465502 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 378E7BDF1654B0A600465502 /* MainStoryboard.storyboard */; };
 		378E7BE41654B0A600465502 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378E7BE31654B0A600465502 /* ViewController.m */; };
+		378E7BEC1654BE8200465502 /* ReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378E7BEB1654BE8100465502 /* ReportViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		378E7BE01654B0A600465502 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		378E7BE21654B0A600465502 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		378E7BE31654B0A600465502 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		378E7BEA1654BE8100465502 /* ReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportViewController.h; sourceTree = "<group>"; };
+		378E7BEB1654BE8100465502 /* ReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				378E7BDF1654B0A600465502 /* MainStoryboard.storyboard */,
 				378E7BE21654B0A600465502 /* ViewController.h */,
 				378E7BE31654B0A600465502 /* ViewController.m */,
+				378E7BEA1654BE8100465502 /* ReportViewController.h */,
+				378E7BEB1654BE8100465502 /* ReportViewController.m */,
 				378E7BCE1654B0A600465502 /* Supporting Files */,
 			);
 			path = NaughtyOrNice;
@@ -176,6 +181,7 @@
 				378E7BD41654B0A600465502 /* main.m in Sources */,
 				378E7BD81654B0A600465502 /* AppDelegate.m in Sources */,
 				378E7BE41654B0A600465502 /* ViewController.m in Sources */,
+				378E7BEC1654BE8200465502 /* ReportViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
