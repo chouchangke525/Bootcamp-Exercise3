@@ -12,5 +12,8 @@
 
 @property (strong, nonatomic) NSDate *tappedOnDate;
 
+@property (weak, nonatomic) IBOutlet UILabel *resultsLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *resultsImageView;
+
 @end
 

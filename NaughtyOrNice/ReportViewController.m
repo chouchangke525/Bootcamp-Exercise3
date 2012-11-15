@@ -78,13 +78,19 @@
     int seconds = [self.tappedOnDate timeIntervalSince1970];
     NSLog(@">>>> seconds:%d",seconds);
     
+    UIImage *resultsImage;
     // Take the unscientific (and not Santa approved) appraoch that
     // if the number of seconds is even you are Nice, else you are naughty
     if (seconds%2 == 0) {
         NSLog(@">>>> Nice");
+        self.resultsLabel.text = @"Nice";
+        resultsImage = [UIImage imageNamed:@"present"];
     } else {
         NSLog(@">>>> Naughty");
+        self.resultsLabel.text = @"Naughty";
+        resultsImage = [UIImage imageNamed:@"coal"];
     }
+    self.resultsImageView.image = resultsImage;
 }
 
 @end

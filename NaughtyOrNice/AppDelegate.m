@@ -10,9 +10,23 @@
 
 @implementation AppDelegate
 
+/*******************************************************************************
+ * @method      customizeAppearance
+ * @abstract    Customize UI controls
+ * @description
+ *******************************************************************************/
+- (void)customizeAppearance
+{
+    // Set the background image for *all* UINavigationBars
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"candybar2"]
+                                       forBarMetrics:UIBarMetricsDefault];
+    [[UIBarButtonItem appearance] setTintColor:[UIColor redColor]];
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [self customizeAppearance];
     return YES;
 }
 							

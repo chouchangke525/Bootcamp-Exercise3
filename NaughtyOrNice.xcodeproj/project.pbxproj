@@ -19,6 +19,11 @@
 		378E7BE11654B0A600465502 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 378E7BDF1654B0A600465502 /* MainStoryboard.storyboard */; };
 		378E7BE41654B0A600465502 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378E7BE31654B0A600465502 /* ViewController.m */; };
 		378E7BEC1654BE8200465502 /* ReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378E7BEB1654BE8100465502 /* ReportViewController.m */; };
+		37CC5CB216555B8000654111 /* candycane.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 37CC5CB116555B8000654111 /* candycane.jpeg */; };
+		37CC5CB616555C5100654111 /* fingerprint.png in Resources */ = {isa = PBXBuildFile; fileRef = 37CC5CB516555C5100654111 /* fingerprint.png */; };
+		37CC5CBA1655607E00654111 /* coal.png in Resources */ = {isa = PBXBuildFile; fileRef = 37CC5CB91655607E00654111 /* coal.png */; };
+		37CC5CBC165560DB00654111 /* present.png in Resources */ = {isa = PBXBuildFile; fileRef = 37CC5CBB165560DB00654111 /* present.png */; };
+		37CC5CC11655637200654111 /* candybar2.png in Resources */ = {isa = PBXBuildFile; fileRef = 37CC5CC01655637200654111 /* candybar2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +45,11 @@
 		378E7BE31654B0A600465502 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		378E7BEA1654BE8100465502 /* ReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportViewController.h; sourceTree = "<group>"; };
 		378E7BEB1654BE8100465502 /* ReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportViewController.m; sourceTree = "<group>"; };
+		37CC5CB116555B8000654111 /* candycane.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = candycane.jpeg; sourceTree = "<group>"; };
+		37CC5CB516555C5100654111 /* fingerprint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fingerprint.png; path = ../fingerprint.png; sourceTree = "<group>"; };
+		37CC5CB91655607E00654111 /* coal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coal.png; sourceTree = "<group>"; };
+		37CC5CBB165560DB00654111 /* present.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = present.png; sourceTree = "<group>"; };
+		37CC5CC01655637200654111 /* candybar2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = candybar2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +69,7 @@
 		378E7BB81654B0A500465502 = {
 			isa = PBXGroup;
 			children = (
+				37CC5CC01655637200654111 /* candybar2.png */,
 				378E7BCD1654B0A600465502 /* NaughtyOrNice */,
 				378E7BC61654B0A600465502 /* Frameworks */,
 				378E7BC41654B0A600465502 /* Products */,
@@ -101,6 +112,7 @@
 		378E7BCE1654B0A600465502 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				37CC5CBD165560E200654111 /* Images */,
 				378E7BCF1654B0A600465502 /* NaughtyOrNice-Info.plist */,
 				378E7BD01654B0A600465502 /* InfoPlist.strings */,
 				378E7BD31654B0A600465502 /* main.m */,
@@ -110,6 +122,17 @@
 				378E7BDD1654B0A600465502 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		37CC5CBD165560E200654111 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				37CC5CBB165560DB00654111 /* present.png */,
+				37CC5CB91655607E00654111 /* coal.png */,
+				37CC5CB516555C5100654111 /* fingerprint.png */,
+				37CC5CB116555B8000654111 /* candycane.jpeg */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +191,11 @@
 				378E7BDC1654B0A600465502 /* Default@2x.png in Resources */,
 				378E7BDE1654B0A600465502 /* Default-568h@2x.png in Resources */,
 				378E7BE11654B0A600465502 /* MainStoryboard.storyboard in Resources */,
+				37CC5CB216555B8000654111 /* candycane.jpeg in Resources */,
+				37CC5CB616555C5100654111 /* fingerprint.png in Resources */,
+				37CC5CBA1655607E00654111 /* coal.png in Resources */,
+				37CC5CBC165560DB00654111 /* present.png in Resources */,
+				37CC5CC11655637200654111 /* candybar2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +326,7 @@
 				378E7BE91654B0A600465502 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
