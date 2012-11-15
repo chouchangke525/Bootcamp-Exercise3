@@ -45,13 +45,19 @@
 /*******************************************************************************
  * @method      viewDidAppear
  * @abstract    Called when a view appears
- * @description <# description #>
+ * @description
  *******************************************************************************/
 - (void)viewDidAppear:(BOOL)animated
 {
-    //NSLog(@">>>> view did appear: button tapped on %@", self.tappedOnDate);
+    // Whent the view appears on screen, Log out the date the button was tapped
+    NSLog(@">>>> view did appear: button tapped on %@", self.tappedOnDate);
 }
 
+/*******************************************************************************
+ * @method      didReceiveMemoryWarning
+ * @abstract    Call when memory is low
+ * @description  
+ *******************************************************************************/
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
